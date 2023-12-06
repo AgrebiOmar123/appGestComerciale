@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductsLevelThreeTwoComponent } from './products-level-three-two.component';
+import { InventaireComponent } from './inventaire.component';
 
 describe('ProductsLevelThreeTwoComponent', () => {
-  let component: ProductsLevelThreeTwoComponent;
-  let fixture: ComponentFixture<ProductsLevelThreeTwoComponent>;
+  let component: InventaireComponent;
+  let fixture: ComponentFixture<InventaireComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProductsLevelThreeTwoComponent ]
+      declarations: [ InventaireComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProductsLevelThreeTwoComponent);
+    fixture = TestBed.createComponent(InventaireComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

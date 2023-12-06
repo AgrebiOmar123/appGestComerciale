@@ -4,7 +4,8 @@ import { CoupensComponent } from './coupens/coupens.component';
 import { HomeComponent } from './home/home.component';
 import { MediaComponent } from './media/media.component';
 import { PagesComponent } from './pages/pages.component';
-import { ProductsComponent } from './products/products.component';
+import { CataloguesComponent } from './catalogues/catalogues.component';
+import{CollectionComponent} from './catalogues/collection/collection.component'
 import { SettingsComponent } from './settings/settings.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 
@@ -12,10 +13,10 @@ import { StatisticsComponent } from './statistics/statistics.component';
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  //{
-    //path: 'catalogues',
-    //loadChildren: () => import('./catalogues/catalogues.module').then(m => m.CataloguesModule)
- // },
+  {
+    path: 'catalogues',
+    loadChildren: () => import('./catalogues/catalogues.module').then(m => m.CataloguesModule)
+  },
   {path: 'statistics', component: StatisticsComponent},
   {
     path: 'coupens',

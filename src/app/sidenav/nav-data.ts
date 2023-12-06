@@ -2,7 +2,7 @@ import { INavbarData } from "./helper";
 
 export const navbarData: INavbarData[] = [
     {
-        routeLink: 'dashboard',
+        routeLink: 'home',
         icon: 'fal fa-home',
         label: 'Home'
     },
@@ -13,8 +13,8 @@ export const navbarData: INavbarData[] = [
         items: [
             {
                 routeLink: 'catalogues/collections',
-                label: 'Level 1.1',
-                items: [
+                label: 'Collections'},
+              /*  items: [
                     {
                         routeLink: 'products/level2.1',
                         label: 'Level 2.1',
@@ -34,10 +34,10 @@ export const navbarData: INavbarData[] = [
                         ]
                     }
                 ]
-            },
-            {
-                routeLink: 'products/level1.2',
-                label: 'Level 1.2',
+            }*/
+            
+              {  routeLink: 'catalogues/inventaire',
+                label: 'Inventaire',
             }
         ]
     },
